@@ -2,10 +2,8 @@ import asyncio
 import discord
 import random
 import string
+import os
 import requests
-
-client = discord.Client()
-token = 'NzgzMTQyNzkyMDkyMTg4Njky.X8Wcjw.YEtuH-rmD4_FHwXosK2Arb4cnE8'
 
 @client.event
 async def on_ready():
@@ -159,4 +157,4 @@ async def on_message(message):
 
    
 
-client.run(token)
+client.run(os.environ['token'])
